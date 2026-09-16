@@ -301,4 +301,37 @@ h1 {
 .languages a.active {
   background: #1261a0;
   color: #ffffff;
+}.map-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #1261a0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}.contact-links {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.contact-links a {
+  width: fit-content;
+}.copy-address {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px solid #1261a0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1261a0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copy-address:hover {
+  background: #1261a0;
+  color: #ffffff;
 }
