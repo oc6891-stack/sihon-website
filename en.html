@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sihon international Freight Forwarding</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+  <div class="logo">
+    <span class="logo-mark">S</span>
+
+    <div>
+      <strong>Sihon Freight</strong>
+      <small>斯宏国际货运代理有限公司</small>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#process">Shipping Information</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="languages">
+  <a href="index.html">MN</a>
+  <a class="active" href="en.html">EN</a>
+  <a href="zh.html">中文</a>
+</div>
+</header>
+    <main id="home" class="welcome-card">
+      <p class="company-name">Sihon International Freight Forwarding</p>
+
+      <h1>Reliable freight from China to Mongolia</h1>
+
+      <p class="description">
+        Sihon International Freight Forwarding — cargo transportation services for individuals, online sellers, and businesses.
+      </p>
+
+      <a class="contact-button" href="tel:+8613961395137">
+        Call us
+      </a>
+    </main> 
+    <section id="about" class="about-section">
+  <div class="about-content">
+    <div>
+      <p class="section-label">ABOUT US</p>
+      <h2>Reliable China–Mongolia Freight Forwarding</h2>
+
+      <p class="about-text"> 
+      Through transport solutions tailored to regular, high-volume business cargo, we help make your supply chain more organized and reliable.
+      </p>
+    </div>
+
+    <ul class="about-list">
+      <li>Services for individuals and businesses</li>
+      <li>Cargo receiving address in Erenhot</li>
+      <li>Direct contact through WeChat</li>
+    </ul>
+  </div>
+</section>
+    <section id="services" class="services-section">
+  <p class="section-label">OUR SERVICES</p>
+  <h2>Freight solutions for every need</h2>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <h3>China–Mongolia Freight</h3>
+      <p>We transport your cargo reliably from China to Mongolia.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Warehouse Service</h3>
+      <p>We receive your cargo at our warehouse in China and consolidate it for shipment.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Business Freight</h3>
+      <p>A service designed for recurring shipments for online sellers and businesses.</p>
+    </article>
+  </div>
+</section> 
+<script>
+  const servicesLink = document.querySelector('a[href="#services"]');
+  const servicesSection = document.querySelector("#services");
+
+  servicesLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    servicesSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+</script>
+<section id="process" class="process-section">
+  <p class="section-label">SHIPPING INFORMATION</p>
+  <h2>How to ship your cargo</h2>
+
+  <div class="process-grid">
+    <article class="process-card">
+      <span>1</span>
+      <h3>Send us your cargo details</h3>
+      <p>Provide us in advance with information about the supplier, cargo type, quantity, and planned shipping time.</p>
+    </article>
+
+    <article class="process-card">
+      <span>2</span>
+      <h3>Deliver to our Erenhot address</h3>
+      <p>Deliver your cargo to our cargo receiving address in Erenhot.</p>
+    </article>
+
+    <article class="process-card">
+      <span>3</span>
+      <h3>Collect your cargo in Mongolia</h3>
+      <p>After your cargo arrives in Mongolia, contact us to arrange collection.</p>
+    </article>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <div class="contact-content">
+    <div class="contact-details">
+      <p class="section-label">CONTACT</p>
+      <h2>Cargo receiving address in Erenhot</h2>
+
+      <div class="contact-links">
+        <a href="tel:+8613961395137">
+          📞 Phone: +86 139 6139 5137
+        </a>
+
+        <a href="mailto:wangsimin1224@163.com">
+          ✉️ Email: wangsimin1224@163.com
+        </a>
+      </div>
+      <p class="address-title">Mongolian address</p>
+<p class="address-text">
+  ӨМӨЗО-ны Эрэнхот хотын Вулан дүүрэг, Зүүн Илиний өргөн чөлөө,
+  Мингрен нийгэмлэг, Хойд Чахар гудамж, 27-р гудамжны
+  Сихон олон улсын тээвэр зуучлалын компани
+</p>
+
+<p class="address-title">Chinese address</p>
+<p class="address-text">
+  内蒙古自治区二连浩特市乌兰区察哈尔街北、伊林大道东
+  名人小区街面楼27号斯宏国际货运代理有限公司
+</p>
+    </div>
+
+    <div class="qr-card">
+      <img
+        src="images/wechat-company-qr.jpg"
+        alt="Sihon company WeChat QR code"
+      />
+      <h3>Contact via WeChat</h3>
+      <p>Open WeChat and scan the QR code.</p>
+    </div>
+  </div>
+</section>
+  </body>
+</html>

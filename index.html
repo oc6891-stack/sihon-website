@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сихон Олон Улсын Тээвэр Зуучлал</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+  <div class="logo">
+    <span class="logo-mark">S</span>
+
+    <div>
+      <strong>Сихон Тээвэр</strong>
+      <small>斯宏国际货运代理有限公司</small>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <a href="#">Нүүр</a>
+    <a href="#about">Бидний тухай</a>
+    <a href="#services">Үйлчилгээ</a>
+    <a href="#process">Тээврийн мэдээлэл</a>
+    <a href="#contact">Холбоо барих</a>
+  </nav>
+
+ <div class="languages">
+  <a class="active" href="index.html">MN</a>
+  <a href="en.html">EN</a>
+  <a href="zh.html">中文</a>
+</div>
+</header>
+    <main class="welcome-card">
+      <p class="company-name">Сихон Олон Улсын Тээвэр Зуучлал</p>
+
+      <h1>Хятадаас Монгол руу найдвартай тээвэр</h1>
+
+      <p class="description">
+        Сихон Олон Улсын Тээвэр Зуучлал нь байгууллагын тогтмол, их хэмжээний
+  ачааг Хятадаас Монгол руу найдвартай, төлөвлөгөөтэйгөөр зохион байгуулан
+  тээвэрлэнэ. Бид таны нийлүүлэлтийн тасралтгүй байдлыг дэмжиж,
+  ачаа тээврийн үйл явцад анхаарч ажиллана.
+      </p>
+
+      <a class="contact-button" href="tel:+8613961395137">
+        Утсаар холбогдох
+      </a>
+    </main> 
+    <section id="about" class="about-section">
+  <div class="about-content">
+    <div>
+      <p class="section-label">БИДНИЙ ТУХАЙ</p>
+      <h2>Хятад–Монгол чиглэлийн тээврийн найдвартай зуучлал</h2>
+
+      <p class="about-text">
+       Байгууллагын тогтмол, их хэмжээний ачаанд чиглэсэн тээврийн шийдлээр бид таны нийлүүлэлтийн үйл явцыг илүү зохион байгуулалттай, найдвартай байхад дэмжин ажиллана.
+    </div>
+
+    <ul class="about-list">
+      <li>Хувь хүн болон бизнест зориулсан үйлчилгээ</li>
+      <li>Эрээн хот дахь ачаа хүлээн авах хаяг</li>
+      <li>WeChat-аар шууд холбогдох боломж</li>
+    </ul>
+  </div>
+</section>
+    <section id="services" class="services-section">
+  <p class="section-label">МАНАЙ ҮЙЛЧИЛГЭЭ</p>
+  <h2>Тээврийн хэрэгцээ бүрт тохирсон шийдэл</h2>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <h3>Хятад–Монгол тээвэр</h3>
+      <p>Таны барааг Хятадаас Монгол хүртэл найдвартай тээвэрлэнэ.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Агуулах үйлчилгээ</h3>
+      <p>Хятад дахь агуулахад ачааг хүлээн авч, нэгтгэн илгээнэ.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Бизнес ачаа</h3>
+      <p>Онлайн худалдаачин болон байгууллагын тогтмол ачаанд зориулсан үйлчилгээ.</p>
+    </article>
+  </div>
+</section> 
+<script>
+  const servicesLink = document.querySelector('a[href="#services"]');
+  const servicesSection = document.querySelector("#services");
+
+  servicesLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    servicesSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+</script>
+<section id="process" class="process-section">
+  <p class="section-label">ТЭЭВРИЙН МЭДЭЭЛЭЛ</p>
+  <h2>Ачаагаа хэрхэн илгээх вэ?</h2>
+
+  <div class="process-grid">
+    <article class="process-card">
+      <span>1</span>
+      <h3>Ачааны мэдээллээ илгээнэ</h3>
+      <p>Нийлүүлэгч, ачааны төрөл, хэмжээ болон тээвэрлэх хугацааны мэдээллийг бидэнд урьдчилан өгнө.</p>
+    </article>
+
+    <article class="process-card">
+      <span>2</span>
+      <h3>Эрээн дэх хаягт хүргүүлнэ</h3>
+      <p>Бараагаа манай Эрээн хот дахь ачаа хүлээн авах хаягт хүргүүлнэ.</p>
+    </article>
+
+    <article class="process-card">
+      <span>3</span>
+      <h3>Монголд хүлээн авна</h3>
+      <p>Ачаа Монголд ирсний дараа бидэнтэй холбогдож, хүлээн авах ажиллагааг зохион байгуулна.</p>
+    </article>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <div class="contact-content">
+    <div class="contact-details">
+      <p class="section-label">ХОЛБОО БАРИХ</p>
+      <h2>Эрээн дэх ачаа хүлээн авах хаяг</h2>
+
+      <div class="contact-links">
+        <a href="tel:+8613961395137">
+          📞 Утас: +86 139 6139 5137
+        </a>
+
+        <a href="mailto:wangsimin1224@163.com">
+          ✉️ Имэйл: wangsimin1224@163.com
+        </a>
+      </div>
+      <p class="address-title">Монгол хэл</p>
+<p class="address-text">
+  ӨМӨЗО-ны Эрэнхот хотын Вулан дүүрэг, Зүүн Илиний өргөн чөлөө,
+  Мингрен нийгэмлэг, Хойд Чахар гудамж, 27-р гудамжны
+  Сихон олон улсын тээвэр зуучлалын компани
+</p>
+
+<p class="address-title">中文地址</p>
+<p class="address-text">
+  内蒙古自治区二连浩特市乌兰区察哈尔街北、伊林大道东
+  名人小区街面楼27号斯宏国际货运代理有限公司
+</p>
+    </div>
+
+    <div class="qr-card">
+      <img
+        src="images/wechat-company-qr.jpg"
+        alt="Сихон компанийн WeChat QR код"
+      />
+      <h3>WeChat-аар холбогдох</h3>
+      <p>WeChat-аа нээгээд QR кодыг уншуулна уу.</p>
+    </div>
+  </div>
+</section>
+  </body>
+</html>
