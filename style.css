@@ -458,10 +458,12 @@ body {
   }
 
   .languages a {
-    min-width: 58px;
-    padding: 12px 10px;
-    white-space: nowrap;
-  }
+  min-width: 50px;
+  padding: 9px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
 }
 
 @media (max-width: 600px) {
@@ -477,6 +479,8 @@ body {
   }
 
   .languages a {
-    min-width: 50px;
-  }
+  min-width: 45px;
+  padding: 8px;
+  font-size: 14px;
+}
 }
