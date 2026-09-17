@@ -499,6 +499,14 @@ body {
     gap: 16px;
     padding: 18px 16px;
   }
+    .site-header,
+  main,
+  .site-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    margin-inline: 0;
+  }
 
   .logo {
     justify-content: center;
