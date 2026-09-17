@@ -352,4 +352,62 @@ line-height: 1.5;
   margin-top: 8px;
   color: #c9d9ea;
   font-size: 11px;
+}html,
+body {
+  overflow-x: hidden;
+}
+
+.contact-content {
+  width: min(100% - 48px, 1100px);
+  margin-inline: auto;
+}
+
+.contact-details {
+  min-width: 0;
+}
+
+.contact-details h2 {
+  max-width: 100%;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.address-text,
+.delivery-note {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.site-footer {
+  width: 100%;
+  margin: 0;
+  padding: 20px 24px;
+  background: #102a4c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.site-footer .legal-name {
+  margin-top: 6px;
+  color: #c9d9ea;
+  font-size: 11px;
+}
+
+@media (max-width: 700px) {
+  .contact-content {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details h2 {
+    font-size: 32px;
+  }
+
+  .qr-card {
+    justify-self: center;
+  }
 }
