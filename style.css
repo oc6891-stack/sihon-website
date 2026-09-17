@@ -319,4 +319,20 @@ h1 {
 
 .contact-links a {
   width: fit-content;
+}.logo-mark {
+  overflow: hidden;
+  padding: 4px;
+}
+
+.logo-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}.logo .logo-mark {
+  background: #ffffff;
+  border: 1px solid #c9d9ea;
+  padding: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(18, 97, 160, 0.12);
 }
