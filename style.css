@@ -335,4 +335,21 @@ h1 {
   padding: 4px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(18, 97, 160, 0.12);
+}.site-footer {
+  padding: 28px 24px;
+  background: #102a4c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+line-height: 1.5;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .legal-name {
+  margin-top: 8px;
+  color: #c9d9ea;
+  font-size: 11px;
 }
