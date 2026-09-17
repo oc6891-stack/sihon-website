@@ -484,3 +484,68 @@ body {
   font-size: 14px;
 }
 }
+/* Гар утсанд бүх агуулгыг бүрэн харагдуулна */
+@media (max-width: 600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 18px 16px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .languages {
+    justify-content: center;
+    margin-left: 0;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .languages a {
+    min-width: 45px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .main-nav {
+    order: initial;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+    overflow: visible;
+  }
+
+  .main-nav a {
+    white-space: normal;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .process-grid,
+  .process-steps,
+  .process-cards,
+  .process-list {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .process-card,
+  .process-step,
+  .step {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
