@@ -864,4 +864,162 @@ body {
   .legal-scope-details {
     padding: 18px;
   }
+}.contact-details h2 {
+  max-width: 720px;
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.contact-intro {
+  max-width: 620px;
+  margin: 0 0 24px;
+  color: #40536e;
+  line-height: 1.6;
+}
+
+.office-address {
+  max-width: 760px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #c9d9ea;
+}
+
+.office-address h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #14213d;
+}
+
+.office-address .address-text {
+  margin: 0;
+  line-height: 1.7;
+}/* Процесс ба холбоо барих хэсгийн эцсийн загвар */
+.process-section {
+  padding: 64px 24px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contact-section {
+  padding: 64px 24px;
+  background: #eaf3ff;
+}
+
+.contact-content {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #d8e5f2;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.contact-content > h2 {
+  margin: 0 0 24px;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.contact-links {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.contact-links a {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #c9d9ea;
+  border-radius: 10px;
+  color: #14213d;
+  background: #f8fbff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  border-color: #1261a0;
+  color: #1261a0;
+  background: #eaf3ff;
+}
+
+.office-address {
+  margin-top: 0;
+  padding: 24px;
+  border: 1px solid #c9d9ea;
+  border-radius: 14px;
+  background: #f8fbff;
+}
+
+.office-address h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.office-address .address-text {
+  margin: 0;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.site-footer {
+  padding: 28px 20px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .process-section,
+  .contact-section {
+    padding: 48px 16px;
+  }
+
+  .contact-content {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .contact-content > h2 {
+    font-size: 32px;
+  }
+
+  .office-address {
+    padding: 20px;
+  }
+}/* Desktop header-ийн жигд байрлал */
+@media (min-width: 901px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 40px;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    gap: clamp(16px, 2vw, 32px);
+    min-width: 0;
+  }
+
+  .main-nav a {
+    color: #40536e;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .main-nav a:hover {
+    color: #1261a0;
+  }
+
+  .languages {
+    margin-left: 0;
+  }
+
+  .language-menu summary {
+    height: 40px;
+  }
 }
