@@ -239,14 +239,6 @@ h1 {
   .contact-details h2 {
     font-size: 27px;
   }
-}.qr-card img {
-  display: block;
-  width: min(100%, 180px);
-  margin: 0 auto 18px;
-}.process-section {
-  padding: 80px 24px;
-  background: #ffffff;
-  text-align: center;
 }
 
 .process-section h2 {
@@ -426,10 +418,8 @@ body {
     word-break: break-word;
   }
 
-  .qr-card {
-    justify-self: center;
-  }
 }
+
 @media (max-width: 900px) {
   .site-header {
     flex-wrap: wrap;
